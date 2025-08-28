@@ -1,0 +1,119 @@
+/* Reset y configuración base */
+* {
+    box-sizing: border-box
+        /* Agregado para mejor control de dimensiones */
+}
+
+/* =============================================================================
+   ENCABEZADO Y TÍTULO PRINCIPAL
+   ============================================================================= */
+/* Contenedor grid para el encabezado*/
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+}
+
+/* Imagen del título (pájaro) */
+.title-image {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Formato del título principal */
+#title {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 100px;
+    text-align: center;
+    color: #6038C2;
+    font-weight: bold;
+}
+
+/* =============================================================================
+   CONTENEDOR PRINCIPAL DE TARJETAS
+   ============================================================================= */
+
+/* Grid container para las tarjetas de lenguajes */
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 1px;
+    margin: 0 0 0 10px;
+}
+
+/* =============================================================================
+   ESTILOS BASE PARA TARJETAS DE CONTENIDO
+   ============================================================================= */
+/* Estilo para el contenido detro de las tarjetas*/
+.content {
+    padding: 10px 50px 40px 50px;
+    border-radius: 25px;
+    border: 2px solid;
+    margin: 10px;
+    min-height: 250px;
+}
+
+/* =============================================================================
+   VARIACIONES DE TARJETAS (COLORES Y ALINEACIÓN)
+   ============================================================================= */
+/* Primer formato para tarjetas (color vinotinto, alineación derecha)*/
+.first {
+    background-color: #C95F85;
+    border-color: #AC3763;
+    text-align: right;
+}
+
+/* Segundo formato para tarjetas (color verde, alineación centro)*/
+.second {
+    background-color: #CBE79C;
+    border-color: #B0C38E;
+    text-align: center;
+}
+
+/* Tercer formato para tarjetas (color azul, alineación izquierda)*/
+.third {
+    background-color: #A2B9E5;
+    border-color: #96AACD;
+    text-align: left;
+}
+
+/* =============================================================================
+   TIPOGRAFÍA Y ELEMENTOS DE TEXTO
+   ============================================================================= */
+
+/* Selector de agrupación para dar formato al texto en los párrafos y h3 */
+p,
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+/* =============================================================================
+   IMÁGENES
+   ============================================================================= */
+/* Formato para todas las imagenes de lenguajes dentro de las tarjetas*/
+.imagen {
+    width: auto;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* =============================================================================
+   CUADRO FINAL
+   ============================================================================= */
+/* Estilo para el cuadro de descripción final */
+#final-square {
+    margin: -10px 20px 20px;
+    border-radius: 25px;
+    background-color: #F9E9DA;
+    padding: 30px 10px 10px 80px;
+    color: #6038C2;
+}
+
+/* Título dentro del cuadro final */
+#final-square h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
